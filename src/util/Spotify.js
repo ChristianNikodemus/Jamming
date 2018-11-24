@@ -4,7 +4,7 @@ import App from '../Components/App/App';
 
 const clientID = "6bdd6beb98b54d819b4d95754f953152";
 
-const redirectURI = "http://localhost:3000/";
+const redirectURI = "http://Jamming.surge.sh";
 
 let accessToken;
 
