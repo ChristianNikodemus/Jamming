@@ -54,7 +54,7 @@ class App extends React.Component {
 
   search(term) {
     Spotify.search(term).then(results => {
-      this.setState({playlistTracks: results})
+      this.setState({searchResults: results})
     })
   }
 

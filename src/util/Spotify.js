@@ -56,27 +56,30 @@ const Spotify = {
     let accessToken = this.getAccessToken();
     let headers = {Authorization: `Bearer ${this.getAccessToken()}`};
     let userID;
+    let playlistID;
+
     // fetch GET Statement
     return fetch(`https://api.spotify.com/v1/me`,{headers: headers}).then(response =>
       response.json()).then(jsonResponse => {
       userID = jsonResponse.id;
-    })
-    // fetch POST Statement that creates a new playlist
-    let playlistID;
-    return fetch(`https://api.spotify.com/v1/users/${userID}/playlists`,{
-      headers: headers,
-      method: 'POST',
-      body: JSON.stringify({name: playlistName})
-    }).then(jsonResponse => {
-      playlistID = jsonResponse.id;
-    })
-    // fetch POST Statement that adds tracks to playlist
-    return fetch(`https://api.spotify.com/v1/playlists/${playlistID}/tracks`,{
-      headers: headers,
-      method: 'POST',
-      body: JSON.stringify({uri: trackURIs})
-    }).then(jsonResponse => {
-      playlistID = jsonResponse.id;
+
+      // fetch POST Statement that creates a new playlist
+      return fetch(`https://api.spotify.com/v1/users/${userID}/playlists`,{
+        headers: headers,
+        method: 'POST',
+        body: JSON.stringify({name: playlistName})
+      }).then(jsonResponse => {
+        playlistID = jsonResponse.id;
+      })
+
+      // fetch POST Statement that adds tracks to playlist
+      return fetch(`https://api.spotify.com/v1/playlists/${playlistID}/tracks`,{
+        headers: headers,
+        method: 'POST',
+        body: JSON.stringify({uri: trackURIs})
+      }).then(jsonResponse => {
+        playlistID = jsonResponse.id;
+      })
     })
   }
 }
