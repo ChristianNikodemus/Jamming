@@ -1,7 +1,7 @@
 {
   "main.css": "/jamming/static/css/main.bab71197.chunk.css",
-  "main.js": "/jamming/static/js/main.a38158a7.chunk.js",
-  "main.js.map": "/jamming/static/js/main.a38158a7.chunk.js.map",
+  "main.js": "/jamming/static/js/main.02d6a5af.chunk.js",
+  "main.js.map": "/jamming/static/js/main.02d6a5af.chunk.js.map",
   "static/js/1.6690267c.chunk.js": "/jamming/static/js/1.6690267c.chunk.js",
   "static/js/1.6690267c.chunk.js.map": "/jamming/static/js/1.6690267c.chunk.js.map",
   "runtime~main.js": "/jamming/static/js/runtime~main.0954bfa6.js",
@@ -10,6 +10,6 @@
   "static/media/logo.svg": "/jamming/static/media/logo.5d5d9eef.svg",
   "static/media/App.css": "/jamming/static/media/background_photo_desktop.37be7357.jpg",
   "index.html": "/jamming/index.html",
-  "precache-manifest.34c1e96fecabd9a757487ed431f618de.js": "/jamming/precache-manifest.34c1e96fecabd9a757487ed431f618de.js",
+  "precache-manifest.fa69063cadf367fadf6df4d1f54e4973.js": "/jamming/precache-manifest.fa69063cadf367fadf6df4d1f54e4973.js",
   "service-worker.js": "/jamming/service-worker.js"
 }
