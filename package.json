@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ChristianNikodemus.github.io/jamming",
+  "homepage": "https://christiannikodemus.github.io/jamming/",
   "name": "jamming",
   "version": "0.1.0",
   "private": true,
@@ -26,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
