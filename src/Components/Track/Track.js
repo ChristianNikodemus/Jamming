@@ -37,7 +37,7 @@ class Track extends React.Component {
         </div>
         <a href="#" className="Track-action"
         onClick={this.addTrack}
-        onClick={this.removeTrack} >{// + or - will go here
+        onClick={this.removeTrack} >{this.renderAction() // + or - will go here
         }</a>
       </div>
     );
