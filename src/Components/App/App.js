@@ -58,10 +58,6 @@ class App extends React.Component {
     })
   }
 
-  playAudio() {
-    this.searchResults.play();
-  }
-
   render() {
     return (
       <div>
