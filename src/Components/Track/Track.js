@@ -35,10 +35,7 @@ class Track extends React.Component {
           <p>{this.props.track.artist} {this.props.track.album}
           </p>
         </div>
-        <a href="#" className="Track-action"
-        onClick={this.addTrack}
-        onClick={this.removeTrack} >{this.renderAction() // + or - will go here
-        }</a>
+        {this.renderAction()}
       </div>
     );
   }
